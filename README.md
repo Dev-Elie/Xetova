@@ -1,7 +1,5 @@
 # Xetova
 
-# daraja2.0-lipa-na-mpesa-nodejs
-
 ## Installation & set up
 
 ### Clone repo
