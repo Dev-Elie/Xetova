@@ -72,12 +72,32 @@ Endpoint - `localhost:3000/api/manageUsers`
 
 Method   - `GET`
 
+Allowed role - `super_admin`
+
+Permission(s) - `read`
+
+Headers - Access token
+
+header - `x-auth-token`
+value  - `access token`
+
+
 
 #### 2. Update user
 
 Endpoint - `localhost:3000/api/manageUsers/${userId}`
 
 Method   - `PUT`
+
+Allowed role - `super_admin`
+
+Permission(s) - `update`
+
+Headers - Access token
+
+header - `x-auth-token`
+value  - `access token`
+
 
 Request body(JSON)
 
@@ -101,6 +121,16 @@ Expected response body
 Endpoint - `localhost:3000/api/manageUsers/${userId}`
 
 Method   - `DELETE`
+
+Allowed role - `super_admin`
+
+Permission(s) - `delete`
+
+Headers - Access token
+
+header - `x-auth-token`
+value  - `access token`
+
 
 Expected response body
 
