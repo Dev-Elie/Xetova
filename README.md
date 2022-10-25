@@ -64,4 +64,50 @@ Expected response body
 	"refreshToken": "********"
 }
 ```
+### Manage Users
+
+#### 1. Read all users
+
+Endpoint - `localhost:3000/api/manageUsers`
+
+Method   - `GET`
+
+
+#### 2. Update user
+
+Endpoint - `localhost:3000/api/manageUsers/${userId}`
+
+Method   - `PUT`
+
+Request body(JSON)
+
+```JSON
+{
+	"userName":"Mikey"
+}
+```
+
+Expected response body
+
+```JSON
+
+{
+	"error": false,
+	"message": "User updated successfully"
+}
+```
+#### 3. Deactivate User
+
+Endpoint - `localhost:3000/api/manageUsers/${userId}`
+
+Method   - `DELETE`
+
+Expected response body
+
+```JSON
+
+{
+	"error": false,
+	"message": "User deleted successfully"
+}
 
