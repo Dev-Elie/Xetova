@@ -3,13 +3,16 @@ const authRoutes = require("./routes/auth");
 const refreshTokenRoutes = require("./routes/refreshToken");
 const userManager = require("./routes/userManager");
 const dbConnect = require("./dbConnect");
+const logUserActivity = require("./middlewares/logUserActivity");
 
 
 const app = express();
 require('dotenv/config')
 dbConnect();
 
+
 app.use(express.json());
+app.use(logUserActivity);
 app.use("/api/auth", authRoutes);
 app.use("/api/refreshToken", refreshTokenRoutes);
 app.use("/api/manageUsers", userManager);

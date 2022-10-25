@@ -18,7 +18,8 @@
     "joi": "^17.6.0",
     "joi-password-complexity": "^5.1.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.3.8"
+    "mongoose": "^6.3.8",
+    "winston": "^3.8.2"
   },
   "devDependencies": {
     "jest": "^28.1.1",
